@@ -15,7 +15,7 @@ for i in `docker ps -aq` ; do
 		echo docker tag $imageid tradedepot/banking-web:$tag
 		docker tag $imageid tradedepot/banking-web:$tag
 		if [ $CI ]; then
-			docker push tradedepot/banking:$tag
+			docker push tradedepot/banking-web:$tag
 		fi
 	fi
 done
